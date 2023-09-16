@@ -1,0 +1,78 @@
+/* Styling for the box container */
+.product-form {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Centering the text elements */
+.product-form h1, .product-form p {
+    text-align: center;
+}
+
+/* Styling for form controls */
+.form-control {
+    margin-top: 10px;
+}
+
+/* Add a straight line after the <p> tag */
+.product-form p::after {
+    content: "";
+    display: block;
+    width: 98%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+.form-control label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-control input[type="text"],
+.form-control input[type="email"],
+.form-control input[type="tel"] {
+    width: 96%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-control input[type="date"],
+.form-control input[type="time"] {
+    width: 46.5%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-control button {
+    display: block;
+    width: 98%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.form-control {
+    margin: 1rem 0;
+}
+
+.form-control input {
+    border : 1px solid #dbc441;
+    font : inherit;
+    border-radius: 2px;
+}
+
+button:hover,
+button:active {
+    background-color: #3e0081;
+    color: white;
+}

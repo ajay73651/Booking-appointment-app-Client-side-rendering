@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-header-nav">
+        <ul class="main-header_item_list">
+          <li class="main-header_item"><a class="active" href="/">Shop</a></li>
+          <li class="main-header_item">
+            <a href="/admin/add-product">Add Product</a>
+          </li>
+          <li class="main-header_item">
+            <a href="/admin/contact-us">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form class="product-form" action="/api/users" method="POST">
+        <h1>Book a call</h1>
+        <p>
+          Book a call slot and our representative will call you within 1hr
+          selected time.
+        </p>
+        <div class="form-control">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required /><br /><br />
+
+          <label for="call_date">Time for Call:</label>
+          <input type="date" id="call_date" name="call_date" />
+          <label for="call_time" hidden="true" style="display: none"
+            >Time for Call:</label
+          >
+          <input type="time" id="call_time" name="call_time" /><br /><br />
+
+          <button type="submit">GET A CALL</button>
+        </div>
+      </form>
+      <!-- display user data -->
+      <div>
+        <ul id="user-list"></ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
